@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://rflypilot.github.io/development/net_interface/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://rflypilot.github.io/Future/rflypilotv2_beta/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>网络通信接口 - RflyPilot Doc</title>
+    <title>RflyPilot v2.0 Beta - RflyPilot Doc</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,9 +13,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "\u7f51\u7edc\u901a\u4fe1\u63a5\u53e3";
-        var mkdocs_page_input_path = "development\\net_interface.md";
-        var mkdocs_page_url = "/development/net_interface/";
+        var mkdocs_page_name = "RflyPilot v2.0 Beta";
+        var mkdocs_page_input_path = "Future\\rflypilotv2_beta.md";
+        var mkdocs_page_url = "/Future/rflypilotv2_beta/";
       </script>
     
     <!--[if lt IE 9]>
@@ -75,39 +75,43 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">开发手册</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../sys_overview/">软硬件概览</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/sys_overview/">软硬件概览</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../rflypilot_system/">软件架构</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/rflypilot_system/">软件架构</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../realtime/">系统实时性</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/realtime/">系统实时性</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../task_period/">任务运行频率</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/task_period/">任务运行频率</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../msg/">线程间通信</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/msg/">线程间通信</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">网络通信接口</a>
-    <ul class="current">
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/net_interface/">网络通信接口</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../compiling_deploy/">编译与部署</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/compiling_deploy/">编译与部署</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../other/">其他设置</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/other/">其他设置</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../rflypilot_dev_example/">开发示例</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/rflypilot_dev_example/">开发示例</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">展望</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Future/future/">下一代RflyPilot</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../future/">下一代RflyPilot</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Future/rflypilotv1_1/">RflyPilot v1.1</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../rflypilotv1_1/">RflyPilot v1.1</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Future/rflypilotv1_2/">RflyPilot v1.2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../rflypilotv1_2/">RflyPilot v1.2</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Future/rflypilotv1_3/">RflyPilot v1.3</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../rflypilotv1_3/">RflyPilot v1.3</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Future/rflypilotv2_beta/">RflyPilot v2.0 Beta</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">RflyPilot v2.0 Beta</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">软件更新</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">拓展板更新</a>
+    </li>
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Help</span></p>
@@ -129,8 +133,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">开发手册</li>
-      <li class="breadcrumb-item active">网络通信接口</li>
+          <li class="breadcrumb-item">展望</li>
+      <li class="breadcrumb-item active">RflyPilot v2.0 Beta</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -139,87 +143,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <div><h1 id="_1">网络通信接口<a class="headerlink" href="#_1" title="Permanent link"></a></h1>
-<p>本小节将介绍RflyPilot的网络通信接口，包括RflySim3D接口、示波器接口等。</p>
-<table>
-<thead>
-<tr>
-<th>功能</th>
-<th>接口</th>
-<th>接/发</th>
-<th>说明</th>
-<th>源文件</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>远程控制台SSH</td>
-<td>TCP:22</td>
-<td>接发</td>
-<td>任何模式</td>
-<td></td>
-</tr>
-<tr>
-<td>RflySim3D视景显示</td>
-<td>UDP:20010</td>
-<td>发送</td>
-<td>在SIH模式下启用</td>
-<td><code>src/application/scope_thread.cpp</code></td>
-</tr>
-<tr>
-<td>系统示波器</td>
-<td>UDP:3333</td>
-<td>发送</td>
-<td>任何模式</td>
-<td><code>src/application/scope_thread.cpp</code></td>
-</tr>
-<tr>
-<td>控制器示波器（自定义）</td>
-<td>UDP:3334</td>
-<td>发送</td>
-<td>任何模式</td>
-<td><code>src/application/scope_thread.cpp</code></td>
-</tr>
-<tr>
-<td>姿态估计示波器（自定义）</td>
-<td>UDP:3335</td>
-<td>发送</td>
-<td>任何模式</td>
-<td><code>src/application/scope_thread.cpp</code></td>
-</tr>
-<tr>
-<td>位置估计示波器（自定义）</td>
-<td>UDP:3336</td>
-<td>发送</td>
-<td>任何模式</td>
-<td><code>src/application/scope_thread.cpp</code></td>
-</tr>
-<tr>
-<td>执行器远程调试接口</td>
-<td>UDP:2222</td>
-<td>接收</td>
-<td>在OFFBOARD模式启用</td>
-<td><code>src/application/offboard_thread.cpp</code></td>
-</tr>
-</tbody>
-</table>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>执行器远程调试接口的功能是提供Simulink接口，使开发者可以利用Simulink调节执行器输出的PWM。相应的Simulink文件在<code>debug_tools/udp_send.slx</code>文件中。</p>
-</div>
-<div class="admonition 注意">
-<p class="admonition-title">注意</p>
-<p>使用RflyPilot的网络相关功能时，需要将RflyPilot连接到局域网，同时设置好<code>rflypilot.txt</code>中的<code>scope_ip</code>（在线示波器计算机的IP）和<code>station_ip</code>(RflySim3D和执行器远程调试接口计算机的IP)。<br>
-</p><pre class="highlight"><code class="language-C"># string
-scope_ip = "192.168.199.233" # 152
-station_ip = "192.168.199.233"</code></pre>
-</div></div>
+                <div><h1 id="rflypilot-v20-beta">RflyPilot v2.0 Beta<a class="headerlink" href="#rflypilot-v20-beta" title="Permanent link"></a></h1>
+<p>RflyPilot v2.0 Beta 在上一版RflyPilot v1.3 (Release) 硬件基础之上进行了重大更新，“计算机视觉在火星！”。</p>
+<h2 id="_1">软件更新<a class="headerlink" href="#_1" title="Permanent link"></a></h2>
+<ol>
+<li>增加对新款磁力计芯片QMC5883P的驱动支持，最高可达500Hz采样率。</li>
+<li>增加对双目视觉摄像头的驱动支持。</li>
+</ol>
+<h2 id="_2">拓展板更新<a class="headerlink" href="#_2" title="Permanent link"></a></h2>
+<ol>
+<li>增加双目视觉接口(Dual-CSI),避免传统USB方案性能较低的问题。</li>
+<li>增加对QMC5883P磁力计的支持。</li>
+<li>增加额外的SPI接口，实现对多IMU的支持。</li>
+<li>增加以太网口的支持(4Pin)。</li>
+<li>增加散热风扇接口。</li>
+<li>增加独立的DC-DC稳压器支持。</li>
+</ol>
+<p><img alt="rflypilot_with_cv" src="../img/rflypilot_adv_camera.png"></p>
+<p><img alt="rflypilot_adv" src="../img/rflypilot_adv_top_view.png"></p></div>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../msg/" class="btn btn-neutral float-left" title="线程间通信"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../compiling_deploy/" class="btn btn-neutral float-right" title="编译与部署">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../rflypilotv1_3/" class="btn btn-neutral float-left" title="RflyPilot v1.3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../others/help/" class="btn btn-neutral float-right" title="Contribute">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -242,10 +189,10 @@ station_ip = "192.168.199.233"</code></pre>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../msg/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../rflypilotv1_3/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../compiling_deploy/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../others/help/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
